@@ -1,0 +1,219 @@
+body {
+    position: relative;
+
+    >span {
+        width: 100%;
+        height: 100%;
+        background: url(../img/overlay.png);
+        position: absolute;
+        z-index: -1;
+    }
+
+    height: 100vh;
+    background-color: rgb(236, 236, 236);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    >section {
+        height: 100px;
+        width: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        >span {
+            width: 80%;
+            height: 80%;
+            background-color: rgba(151, 151, 151, 0.551);
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: .4s ease-in-out;
+            box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.29);
+            -webkit-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.29);
+            -moz-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.29);
+            position: relative;
+
+            >i {
+                color: rgb(70, 70, 70);
+                font-size: 35px;
+                transition: .4s ease-in-out;
+            }
+
+            >div {
+                width: 100px;
+                height: 35px;
+                background-color: #1DA1F2;
+                position: absolute;
+                top: 0;
+                opacity: 0;
+                transition: .4s ease-in-out;
+                border-radius: 7px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: white;
+                text-transform: capitalize;
+                letter-spacing: 2px;
+                font-family: 'font';
+
+                >span {
+                    width: 10px;
+                    height: 10px;
+                    background-color: #1DA1F2;
+                    position: absolute;
+                    bottom: -5px;
+                    left: 46%;
+                    transform: rotate(45deg);
+                }
+            }
+
+            &:hover {
+                background-color: #1DA1F2;
+                transform: scale(1.3);
+
+                >i {
+                    color: white;
+                }
+
+                >div {
+                    opacity: 1;
+                    transform: translateY(-50px);
+                }
+            }
+        }
+    }
+}
+
+// -------------------------------------------------------------------
+#whatsapp {
+    >span {
+        &:hover {
+            background-color: #41E960;
+        }
+
+        >div {
+            background-color: #41E960;
+
+            >span {
+                background-color: #41E960;
+            }
+        }
+    }
+}
+
+#youtube {
+    >span {
+        padding-left: 2px;
+        padding-top: 4px;
+
+        &:hover {
+            background-color: #FF0000;
+        }
+
+        >div {
+            background-color: #FF0000;
+
+            >span {
+                background-color: #FF0000;
+            }
+        }
+    }
+}
+
+#facebook {
+    >span {
+        padding-left: 2px;
+        padding-top: 1px;
+
+        &:hover {
+            background-color: #1E4595;
+        }
+
+        >div {
+            background-color: #1E4595;
+
+            >span {
+                background-color: #1E4595;
+            }
+        }
+    }
+}
+
+#instagram {
+    >span {
+
+        &:hover {
+            background: #f09433;
+            background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+            background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
+        }
+
+        >div {
+            background: #f09433;
+            background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+            background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
+
+            >span {
+                background: #f09433;
+                background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+                background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+                background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
+            }
+        }
+    }
+}
+
+#github {
+    >span {
+
+        &:hover {
+            background-color: #000000;
+        }
+
+        >div {
+            background-color: #000000;
+
+            >span {
+                background-color: #000000;
+            }
+        }
+    }
+}
+
+// --------------------------------footer-----------------------------------
+footer {
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    bottom: 0;
+    background: #f09433;
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    >p{
+        font-family: 'font';
+        color: aliceblue;
+        text-transform: capitalize;
+        letter-spacing: 2px;
+        &:nth-of-type(1){
+            border-right: 2px solid white;
+            padding-right: 5px;
+        }
+        &:nth-of-type(2){
+            padding-left: 5px;
+        }
+    }
+}
